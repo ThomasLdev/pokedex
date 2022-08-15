@@ -1,0 +1,57 @@
+@import "../abstracts/variables";
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: $navbar-background-color;
+  box-shadow: $navbar-box-shadow;
+  @include navbar-link-font;
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__item {
+      padding: 5px 10px;
+      list-style-type: none;
+
+      a {
+        color: $main-color;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: $navbar-link-spacing;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__logo {
+    padding: 5px 0 5px 15px;
+
+    img {
+      width: $navbar-logo-width;
+    }
+
+    a {
+      color: $main-color;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      p {
+        padding-left: 5px;
+        letter-spacing: $navbar-link-spacing;
+      }
+    }
+
+    &__container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

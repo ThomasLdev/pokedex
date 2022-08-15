@@ -1,0 +1,27 @@
+@import "../abstracts/variables";
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 81%;
+  width: 80%;
+  margin: auto;
+  @include main-font;
+
+  &__title {
+    text-align: center;
+    font-size: $title-font-size;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-size: $subtitle-font-size;
+  }
+
+  &__catch {
+    text-align: center;
+    text-decoration: underline;
+  }
+}

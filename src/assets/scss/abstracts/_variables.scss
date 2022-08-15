@@ -1,0 +1,24 @@
+@import "../core/typography";
+@import "../core/colors";
+
+@mixin main-font {
+  font-family: "OpenSans", serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+
+@mixin navbar-link-font {
+  font-family: "OpenSans", serif;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+// _navbar
+$navbar-link-spacing: .2rem;
+$navbar-background-color: rgb(0, 0, 0, 0.6);
+$navbar-box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+$navbar-logo-width: 60px;
+
+// _content
+$title-font-size: 3rem;
+$subtitle-font-size: 2rem;

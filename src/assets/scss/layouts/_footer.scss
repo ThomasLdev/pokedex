@@ -1,0 +1,15 @@
+@import "../abstracts/variables";
+
+.footer {
+  padding: 35px 0;
+  background-color: $third-color;
+  text-align: center;
+
+  &__info {
+    @include main-font;
+
+    a {
+      color: $secondary-color;
+    }
+  }
+}
