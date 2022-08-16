@@ -1,10 +1,17 @@
 @import "../core/typography";
 @import "../core/colors";
 
-@mixin main-font {
+@mixin main-font($type: "normal") {
   font-family: "OpenSans", serif;
-  font-size: 1.2rem;
   font-weight: normal;
+
+  @if $type == "title" {
+    font-size: 2rem;
+  }
+
+  @if $type == "normal" {
+    font-size: 1.2rem;
+  }
 }
 
 @mixin navbar-link-font {
@@ -15,10 +22,23 @@
 
 // _navbar
 $navbar-link-spacing: .2rem;
-$navbar-background-color: rgb(0, 0, 0, 0.6);
-$navbar-box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+$navbar-background-color: transparentize($secondary-color, 0.3);
 $navbar-logo-width: 60px;
 
 // _content
 $title-font-size: 3rem;
 $subtitle-font-size: 2rem;
+$main-border: 1px solid transparentize($secondary-color, 0.5);
+$main-box-shadow: rgba(0, 0, 0, 0.16) 0 3px 6px, rgba(0, 0, 0, 0.23) 0 3px 6px;
+
+// _card
+$fire-type-color: #fd7d24;
+$plant-type-color: #9bcc50;
+$poison-type-color: #b97fc9;
+$water-type-color: #4592c4;
+$insect-type-color: #729f3f;
+$normal-type-color: #a4acaf;
+$combat-type-color: #d56723;
+$psy-type-color: #f366b9;
+$fly-type-color-top: #bdb98b;
+$fly-type-color-bot: #3dc7ef;

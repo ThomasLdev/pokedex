@@ -6,7 +6,7 @@
   text-align: center;
 
   &__info {
-    @include main-font;
+    @include main-font("normal");
 
     a {
       color: $secondary-color;

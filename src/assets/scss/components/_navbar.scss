@@ -5,7 +5,7 @@
   justify-content: space-between;
   width: 100%;
   background-color: $navbar-background-color;
-  box-shadow: $navbar-box-shadow;
+  box-shadow: $main-box-shadow;
   @include navbar-link-font;
 
   &__nav {

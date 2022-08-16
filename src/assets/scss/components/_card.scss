@@ -1,0 +1,105 @@
+@import "../abstracts/variables";
+
+.card {
+  position: relative;
+  margin: auto;
+  padding: 2em;
+  border-radius: 1em;
+  border: $main-border;
+  background-color: $third-color;
+  backdrop-filter: blur(20px);
+  height: 300px;
+  box-shadow: $main-box-shadow;
+
+  &__image {
+    img {
+      width: 150px;
+    }
+  }
+
+  &:after {
+    content: '\A';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+
+  &__icon {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    z-index: 2;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &:hover:after {
+    opacity: 1;
+  }
+
+  &:hover {
+    .card__icon {
+      opacity: 0.7;
+    }
+  }
+
+  &__type {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    border-radius: 5px;
+    padding: 0 7px;
+    color: $main-color;
+
+    &--fire {
+      background-color: $fire-type-color;
+    }
+
+    &--plant {
+      background-color: $plant-type-color;
+    }
+
+    &--poison {
+      background-color: $poison-type-color;
+    }
+
+    &--water {
+      background-color: $water-type-color;
+    }
+
+    &--insect {
+      background-color: $insect-type-color;
+    }
+
+    &--normal {
+      background-color: $normal-type-color;
+      color: $secondary-color;
+    }
+
+    &--combat {
+      background-color: $combat-type-color;
+    }
+
+    &--psy {
+      background-color: $psy-type-color;
+    }
+
+    &--fly {
+      background: linear-gradient(180deg, $fly-type-color-top 50%, $fly-type-color-bot 50%);
+      color: $secondary-color;
+    }
+  }
+}

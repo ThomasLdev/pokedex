@@ -1,5 +1,6 @@
 import React from "react";
-import FeaturesList from "./Feature";
+import FeaturesList from "components/Feature";
+import CardsGrid from "components/CardsGrid";
 
 export default function MainContent() {
     return (
@@ -16,6 +17,7 @@ export default function MainContent() {
                 </p>
                 <FeaturesList/>
             </div>
+            <CardsGrid/>
         </div>
     );
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import PokedexLogo from "../assets/media/images/logo.png";
+import PokedexLogo from "assets/media/images/logo.png";
 
 export default function Navbar() {
     return (
@@ -7,7 +7,7 @@ export default function Navbar() {
             <div className="navbar__logo">
                 <a className="navbar__logo__container" href="/">
                     <img src={PokedexLogo}
-                         alt="pokédex logo"/>
+                         alt="pokédex"/>
                     <p>Pokédex</p>
                 </a>
             </div>

@@ -4,8 +4,10 @@ import './abstracts/_variables.scss';
 // Layouts
 import './layouts/_content.scss';
 import './layouts/_footer.scss';
+import './layouts/_cards-grid.scss';
 // Components
 import './components/_navbar.scss';
 import './components/_feature.scss';
+import './components/_card.scss';
 // Page
 import './pages/_page.scss';
